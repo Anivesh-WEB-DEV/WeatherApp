@@ -75,7 +75,9 @@ setError('');
 
   return (
     <div className='container'>
+    <h1 className='heading'>Weather React App</h1>
       <div className="weather">
+    <h1 className='head'>Weather React App</h1>
        <div className="search">
         <input type="text" spellcheck="false" placeholder='Enter City Name' onChange={e=> setName(e.target.value)}
           onKeyDown={e=>{
