@@ -1,5 +1,5 @@
 .container{
-    width: 100%;
+    width:100vw;
     height: 700px;
     padding-top: 20px;
     background-color: rgb(137, 170, 237);
@@ -42,9 +42,9 @@
      width: 20px;
     }
     .weatherimg {   
-      margin-top: 20px;  
-      width: 170px;
-      height: 155px ;
+        height: 165px;
+        margin-top: 20px;
+        width: 199px;
       
 }
 .winfo h1 {    font-size: 70px;    font-weight: 500;    margin-top: -15px;
@@ -68,3 +68,15 @@
 }
 .error {    color: rgb(235, 169, 169);    text-align: left;    margin-left: 10px;
 }
+
+@media (max-width: 440px) {
+    .container {
+     width: fit-content;
+     height:100vh;
+     /* padding: 20px 0px; */
+    }
+    .weather{
+        margin: 0px 20px;
+    }
+  }
+  

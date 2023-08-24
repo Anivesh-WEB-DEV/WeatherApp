@@ -77,7 +77,13 @@ setError('');
     <div className='container'>
       <div className="weather">
        <div className="search">
-        <input type="text" placeholder='Enter City Name' onChange={e=> setName(e.target.value)}/>
+        <input type="text" spellcheck="false" placeholder='Enter City Name' onChange={e=> setName(e.target.value)}
+          onKeyDown={e=>{
+            if(e.key === 'Enter'){
+              handleClick();
+            }
+          }}
+        />
         <button><img src='/IMG/search_Icon.png' alt="" onClick={handleClick}/></button>
        </div>
        <div className="error">
